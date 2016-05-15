@@ -1,6 +1,5 @@
 from math import pi, sin, asin, cos, sqrt
 
-
 JFK = ("40.641108", "-73.778246")
 LAX = ("33.941544", "-118.408755")
 SLC = ("40.788139", "-111.980268")
@@ -149,11 +148,15 @@ class Distance(object):
         self.distance = self.calculate_distance(p1, p2)
 
     def calculate_distance(self, p1, p2):
+        """
+        Great circle calculation of distance between two points.
+        """
         distance = 2.0 * asin(
             sqrt((sin((p1.latitude-p2.latitude)) / 2.0) ** 2 +
                 cos(p1.latitude) * cos(p2.latitude) *
                 (sin((p1.longitude-p2.longitude) / 2.0)) ** 2))
         return distance * 180 * 60 / pi
+
 
 class DistanceMagicMixin(object):
 
