@@ -53,6 +53,12 @@ class Point(object):
         return "{latitude}, {longitude}".format(
                 latitude=latitude_str, longitude=longitude_str)
 
+    def is_equal(self, p):
+        """
+        Test for quality with `p'. The clumsy way.
+        """
+        return self.latitude == p.latitude and self.longitude == p.longitude
+
     def calculate_distance(self, other):
         """
         Demo how it might work without using magic methods.
