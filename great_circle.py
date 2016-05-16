@@ -128,7 +128,7 @@ class PointMagicMixin(object):
         Return string representation of point to specified precision. Intended
         to be used in support of magic methods __repr__() and __format__().
         """
-        formatstr = "Point({{latitude:{}f}}, {{longitude:{}f}})"
+        formatstr = "MagicPoint({{latitude:{}f}}, {{longitude:{}f}})"
         if not precision:
             formatstr = formatstr.format('', '')
         else:
