@@ -1,8 +1,9 @@
 from math import pi, sin, asin, cos, sqrt
 
-JFK = ("40.641108", "-73.778246")
-LAX = ("33.941544", "-118.408755")
-SLC = ("40.788139", "-111.980268")
+JFK = ('40.641108', '-73.778246')
+LAX = ('33.941544', '-118.408755')
+SLC = ('40.788139', '-111.980268')
+CAN = ('21.040231', '-86.873585')
 
 
 class Point(object):
@@ -79,7 +80,7 @@ class PointMagicMixin(object):
         """
         Destructor called when object destroyed by Python GC.
         """
-        print("__del__() method called on {:.2f}.".format(self))
+        print("__del__() method called on {:f}.".format(self))
 
     def __eq__(self, other):
         """
