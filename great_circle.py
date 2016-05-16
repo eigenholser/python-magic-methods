@@ -169,7 +169,8 @@ class DistanceMagicMixin(object):
 
     def __call__(self, p1, p2):
         """
-        This method called when object instance called like a function.
+        This method called when object instance called like a function. A very
+        contrived example.
         """
         distance = self.calculate_distance(p1, p2)
         return "{0:.2f}".format(distance)
