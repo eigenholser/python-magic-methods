@@ -4,6 +4,10 @@ Python Magic Methods
 
 Slides and code for talk on Python's magic methods.
 
+The demo code is developed for Python 3.
+
+RISE is the Reveal.js Jupyter slideshow extension.
+
 
 ------------
 Installation
