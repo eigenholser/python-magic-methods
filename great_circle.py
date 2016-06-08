@@ -28,6 +28,9 @@ class Point(object):
         return rad
 
     def coordinates(self):
+        """
+        Calculate coordinates in degrees and minutes from radians.
+        """
         latitude = (self.latitude / pi) * 180
         latitude_deg, latitude_min = str(latitude).split(".")
         latitude_deg = int(latitude_deg)
