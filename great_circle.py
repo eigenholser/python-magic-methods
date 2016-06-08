@@ -15,7 +15,7 @@ class Point(object):
 
     def __init__(self, p):
         """
-        Initialize instance.
+        Initialize latitude and longitude.
         """
         self.latitude = self.to_radians(float(p[self.LATITUDE]))
         self.longitude = self.to_radians(float(p[self.LONGITUDE]))
@@ -153,6 +153,9 @@ class Distance(object):
     """
 
     def __init__(self, p1, p2):
+        """
+        Initialize instance.
+        """
         self.p1 = p1
         self.p2 = p2
         self.distance = self.calculate_distance(p1, p2)
